@@ -16,10 +16,30 @@ const trangThaiNguoiDung: { [chatId: string]: any } = {};
 // Map giống Object (cũng là kiểu khóa -> giá trị), nhưng có sẵn các hàm
 // tiện dùng: .set(khóa, giá_trị) để thêm, .get(khóa) để lấy ra.
 // ============================================
-const danhSachNode = new Map();
+const danhSachNode = [
+    {
+        ten: 'HashTable',
+        cacBai: [
+            {ten: 'Two Sum'},
+            {ten: 'Valid Anagram'},
+            {ten: 'Contains Duplicates'}
+        ],
+    },
 
-danhSachNode.set("hashtable", ["contains duplicate", "two sum"]);
-danhSachNode.set("twopointer", ["remove zeroes", "reverse array"]);
+    {
+        ten: 'TwoPointer',
+        cacBai: [
+            {ten: 'Reverse Array'},
+            {ten: 'Merge Sorted Array'},
+            {ten: 'Move Zeroes'}
+        ]
+    }
+
+];
+
+function showMenu(luaChon) {
+    
+}
 // Muốn thêm node mới, copy 1 dòng .set(...) ở trên rồi đổi tên node + danh sách bài.
 
 
