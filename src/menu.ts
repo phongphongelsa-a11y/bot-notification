@@ -2,20 +2,16 @@
 // Chỉ cần dùng: function, if/else, object, mảng, vòng lặp - y như logic.ts.
 // Không cần async/await, arrow function, hay regex.
 
-// ============================================
+
 // NƠI LƯU TRẠNG THÁI CỦA TỪNG NGƯỜI DÙNG
 // Khóa (key) là chatId, giá trị là trạng thái của người đó.
 // Tạm để kiểu "any" (không kiểm tra chặt) để bạn tự do định hình dữ liệu.
-// ============================================
+
 const trangThaiNguoiDung: { [chatId: string]: any } = {};
 
 
-// ============================================
-// DỮ LIỆU MENU: dùng Map để lưu.
-// Khóa (key) là TÊN NODE, giá trị (value) là MẢNG TÊN BÀI bên trong node đó.
-// Map giống Object (cũng là kiểu khóa -> giá trị), nhưng có sẵn các hàm
-// tiện dùng: .set(khóa, giá_trị) để thêm, .get(khóa) để lấy ra.
-// ============================================
+// DỮ LIỆU MENU: dùng object để lưu.
+
 const danhSachNode = [
     {
         ten: 'HashTable',
