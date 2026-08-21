@@ -1,7 +1,7 @@
 // ĐÂY LÀ FILE BẠN CODE.
 // Chỉ cần dùng: function, if/else, biến, vòng lặp, return.
 // Không cần quan tâm async, arrow function (=>), regex là gì cả.
-
+const prompt = require('prompt-sync')();
 // VÍ DỤ: nhận vào 1 chuỗi gồm 2 dòng, mỗi dòng 1 số, trả về tổng 2 số đó.
 // Ví dụ input:
 //   "3
@@ -134,10 +134,14 @@ function ContainDuplicate(nums:string) : string {
 }
 
 
+
+
 // Hàm này nhận vào tin nhắn người dùng gửi tới bot (message),
 // và phải TRẢ VỀ (return) câu bot sẽ trả lời.
 // Nếu return chuỗi rỗng "", bot sẽ im lặng, không trả lời.
 function getReply(message: string) {
+
+  
   if (startWith(message, 'ContainDuplicates')) {
     return ContainDuplicate(message);
   }
